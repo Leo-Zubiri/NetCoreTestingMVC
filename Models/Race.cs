@@ -4,7 +4,7 @@ using NetCoreTestingMVC.Data.Enum;
 
 namespace NetCoreTestingMVC.Models
 {
-    public class Races
+    public class Race
     {
         [Key]
         public int Id { get; set; }
