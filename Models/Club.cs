@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using NetCoreTestingMVC.Data.Enum;
 
 namespace NetCoreTestingMVC.Models
 {
@@ -14,5 +15,6 @@ namespace NetCoreTestingMVC.Models
         public Address? Address { get; set; }
         [ForeignKey("AppUser")] public string? AppUserId { get; set; }
         public AppUser? AppUser { get; set; }
+        public ClubCategory ClubCategory { get; set; }
     }
 }
